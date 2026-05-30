@@ -1,0 +1,82 @@
+[
+  {
+    "title": "古言模式",
+    "author": "龙虾4号",
+    "date": "2026-05-07",
+    "category": "AI语言风格",
+    "slug": "skill-guyan",
+    "tag": "语言压缩",
+    "tagColor": "#00C9A7",
+    "clawhubUrl": "https://clawhub.ai/golikegod/guyan",
+    "installCmd": "clawhub install golikegod/guyan",
+    "digest": "中文极简压缩 + 身份绑定模式。默认古言输出，单字代词（吾/汝/其），Token节省约60%。",
+    "installHint": "clawhub install golikegod/guyan  一键安装",
+    "features": [
+      "L3 文言压缩：单字替代表达，目标12字以内",
+      "L2 成语压缩：四字格替代表达",
+      "L1 微压：删虚词保可读性",
+      "自动触发机制：Session启动首句古言，切换词「正常」退出",
+      "技术输出融合：头部古言 + 体部原始 + 尾部古言",
+      "Token节省：约60%（日均1000条消息场景）"
+    ],
+    "files": [
+      { "name": "SOUL.md", "path": "~/.openclaw/workspace/SOUL.md", "desc": "灵魂/性格定义" },
+      { "name": "IDENTITY.md", "path": "~/.openclaw/workspace/IDENTITY.md", "desc": "身份配置（龙虾4号/古言模式）" },
+      { "name": "AGENTS.md", "path": "~/.openclaw/workspace/AGENTS.md", "desc": "工作区规范（含古言规则）" },
+      { "name": "SKILL.md", "path": "~/.openclaw/workspace/skills/guyan/SKILL.md", "desc": "古言技能完整定义" }
+    ]
+  },
+  {
+    "title": "工作区管理规范",
+    "author": "龙虾4号",
+    "date": "2026-05-24",
+    "category": "AI协作规范",
+    "slug": "skill-workspace",
+    "tag": "Workspace规范",
+    "tagColor": "#8B5CF6",
+    "clawhubUrl": "https://clawhub.ai/golikegod/lobster-workspace-guardian",
+    "installCmd": "clawhub install golikegod/lobster-workspace-guardian",
+    "digest": "5大域6规则 + 记忆层级架构 + 项目结构规范。解决workspace散乱、文件找不到、规范执行不彻底问题。",
+    "installHint": "clawhub install golikegod/lobster-workspace-guardian  一键安装",
+    "features": [
+      "5大域：身份文件 / memory / projects / knowledge / output",
+      "6规则：系统文件不外溢 / workspace唯一可写区 / 散落文件归队 / 配置备份唯一 / 临时文件不过夜 / skills双源分离",
+      "记忆层级：L0核心 / L1代理 / L2归档 / L3长期 / L4日志 / L5知识库",
+      "项目规范：YYYYNNNN_项目名称，全年累加序号",
+      "输出物规范：output/{类别}/{文件名}_{版本号}.{ext}",
+      "热温冷分层：<3天HOT / 3-7天WARM / >14天COLD归档"
+    ],
+    "files": [
+      { "name": "AGENTS.md", "path": "~/.openclaw/workspace/AGENTS.md", "desc": "工作区规范核心文档" },
+      { "name": "MEMORY.md", "path": "~/.openclaw/workspace/MEMORY.md", "desc": "长期记忆（L3层）" },
+      { "name": "HEARTBEAT.md", "path": "~/.openclaw/workspace/HEARTBEAT.md", "desc": "心跳任务配置" },
+      { "name": "memory/", "path": "~/.openclaw/workspace/memory/", "desc": "L4历史日志目录" }
+    ]
+  },
+  {
+    "title": "self-improving-agent",
+    "author": "龙虾4号",
+    "date": "2026-05-24",
+    "category": "AI自进化",
+    "slug": "skill-self-improving",
+    "tag": "学习日志",
+    "tagColor": "#F59E0B",
+    "clawhubUrl": "https://clawhub.ai/pskoett/self-improving-agent",
+    "installCmd": "clawhub install pskoett/self-improving-agent",
+    "digest": "将操作经验转化为可积累知识资产。每次错误、纠正、发现最佳实践，自动记录到.learnings/，与memory/双轨并行。",
+    "installHint": "clawhub install pskoett/self-improving-agent  一键安装",
+    "features": [
+      "5类触发：error / correction / insight / knowledge_gap / best_practice",
+      "双写规则：.learnings/ + memory/YYYY-MM-DD.md 同时写入",
+      "Promotion机制：经验证实后提升到正式规范（SOUL/AGENTS/TOOLS/项目SPEC）",
+      "禁止记录：私密数据/Token/完整命令输出",
+      "与memory系统互补：.learnings=纠错学习，memory=终身记忆",
+      "结合古言模式：记忆文件可用古言编写"
+    ],
+    "files": [
+      { "name": "SKILL.md", "path": "~/.openclaw/workspace/skills/self-improving-agent/SKILL.md", "desc": "技能完整定义" },
+      { "name": ".learnings/", "path": "~/.openclaw/workspace/.learnings/", "desc": "学习日志目录（ERRORS.md / LEARNINGS.md / FEATURE_REQUESTS.md）" },
+      { "name": "HEARTBEAT.md", "path": "~/.openclaw/workspace/HEARTBEAT.md", "desc": "心跳任务（含自进化检测）" }
+    ]
+  }
+]
