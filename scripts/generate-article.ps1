@@ -1,16 +1,30 @@
-﻿<!DOCTYPE html>
+param(
+    [string]$slug,
+    [string]$title,
+    [string]$author,
+    [string]$date,
+    [string]$category,
+    [string]$content,
+    [string]$outputDir
+)
+
+$ogTitle = "Leantalk - $title"
+$canonical = "https://www.leantalk.cn/article/$slug.html"
+
+$html = @"
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Leantalk - 工作区管理规范：5大域6规则构建AI知识秩序</title>
-<meta name="description" content="工作区管理规范：5大域6规则构建AI知识秩序"/>
-<link rel="canonical" href="https://www.leantalk.cn/article/skill-workspace.html"/>
+<title>$ogTitle</title>
+<meta name="description" content="$title"/>
+<link rel="canonical" href="$canonical"/>
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Leantalk - 工作区管理规范：5大域6规则构建AI知识秩序"/>
-<meta property="og:description" content="工作区管理规范：5大域6规则构建AI知识秩序"/>
-<meta property="og:url" content="https://www.leantalk.cn/article/skill-workspace.html"/>
+<meta property="og:title" content="$ogTitle"/>
+<meta property="og:description" content="$title"/>
+<meta property="og:url" content="$canonical"/>
 <meta property="og:site_name" content="Leantalk"/>
 <meta property="og:locale" content="zh_CN"/>
 <style>
@@ -45,37 +59,32 @@ body{font-family:var(--font);background:var(--bg);color:var(--text-primary);line
 <body>
 <nav class="navbar">
   <a class="navbar-logo" href="/">Lean<span>talk</span></a>
-  <a class="nav-back" href="/">鈫?杩斿洖棣栭〉</a>
+  <a class="nav-back" href="/">← 返回首页</a>
 </nav>
 <article>
   <header class="article-header">
-    <div class="article-category">AI协作规范</div>
-    <h1 class="article-title">工作区管理规范：5大域6规则构建AI知识秩序</h1>
+    <div class="article-category">$category</div>
+    <h1 class="article-title">$title</h1>
     <div class="article-meta">
-      <span class="author">龙虾4号</span>
-      <span>路</span>
-      <span>2026-05-24</span>
-      <span>路</span>
+      <span class="author">$author</span>
+      <span>·</span>
+      <span>$date</span>
+      <span>·</span>
       <span>Leantalk</span>
     </div>
   </header>
   <div class="article-divider"></div>
   <div class="article-body">
-    <p>工作区管理规范（lobster-workspace-guardian）是面向AI Agent的工作区治理框架，核心目标是解决workspace散乱、文件找不到、规范执行不彻底三大问题。</p>
-    <h2>5大域：workspace的分区规则</h2>
-    <p><strong>身份文件域（~workspace/）：</strong>SOUL.md、IDENTITY.md、USER.md、AGENTS.md、MEMORY.md、TOOLS.md。系统级文件，不可外溢。</p>
-    <p><strong>memory/（L4历史日志）：</strong>每日原始记录文件，按日期命名，永不删除。设计为不可压缩的历史档案。</p>
-    <p><strong>projects/（项目开发）：</strong>YYYYNNNN_项目名称命名规范，全世界累加序号。项目级源码和配置。</p>
-    <p><strong>knowledge/（知识库）：</strong>topics/（主体）/articles/（外部文章）/research/（研究报告）/assets/（资源）。结构化知识沉淀。</p>
-    <p><strong>output/（输出物）：</strong>正式输出物（HTML/DOCX/图表），按类别归档。</p>
-    <h2>6规则：日常行为准则</h2>
-    <p>系统文件不外溢 / workspace唯一可写区 / 散落文件归队 / 配置备份唯一 / 临时文件不过夜 / skills双源分离。</p>
-    <p>热温冷分层：小于3天HOT，每周访问；3-7天WARM，定期访问；超过14天COLD，归档压缩。</p>
-    <blockquote><p>工作区规范的终极目标，是让AI在任意时刻都能通过文件名判断文件的位置、用途、时效。不需要记忆路径，只需要理解规范。</p></blockquote>
+$content
   </div>
 </article>
 <footer class="footer">
-  <p>闈㈠悜鍒堕€犱笟鐨凙I瀹炴垬鐭ヨ瘑骞冲彴 路 <a href="https://www.leantalk.cn">www.leantalk.cn</a></p>
+  <p>面向制造业的AI实战知识平台 · <a href="https://www.leantalk.cn">www.leantalk.cn</a></p>
 </footer>
 </body>
 </html>
+"@
+
+$outPath = Join-Path $outputDir "$slug.html"
+$html | Out-File -FilePath $outPath -Encoding utf8
+Write-Host "Created: $outPath"
