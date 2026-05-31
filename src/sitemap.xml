@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.leantalk.cn/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.leantalk.cn/article/20260517-sop-digital.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.leantalk.cn/article/20260518-mes-decision.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.leantalk.cn/article/20260519-ai-terms-factory.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.leantalk.cn/article/20260520-three-standards.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.leantalk.cn/article/20260523-normal-factory-ai.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.leantalk.cn/article/20260523-ai-qc-limits.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.leantalk.cn/article/20260524-mrp-kanban.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.leantalk.cn/article/20260525-mfmea.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.leantalk.cn/article/kb-20260502-bcg-talent-advantage-2026.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.leantalk.cn/article/kb-20260516-leader-diagnosis.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.leantalk.cn/article/kb-20260516-flow-ownership.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.leantalk.cn/article/kb-20260518-mes.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.leantalk.cn/article/kb-20260523-ai-qc.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.leantalk.cn/article/skill-guyan.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.leantalk.cn/article/skill-self-improving.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.leantalk.cn/article/skill-workspace.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://leantalk.cn/</loc><lastmod>2026-05-31</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://leantalk.cn/article/20260517-sop-digital.html</loc><lastmod>2026-05-17</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://leantalk.cn/article/20260518-mes-decision.html</loc><lastmod>2026-05-18</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://leantalk.cn/article/20260519-ai-terms-factory.html</loc><lastmod>2026-05-19</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://leantalk.cn/article/20260520-three-standards.html</loc><lastmod>2026-05-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://leantalk.cn/article/20260523-normal-factory-ai.html</loc><lastmod>2026-05-23</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://leantalk.cn/article/20260523-ai-qc-limits.html</loc><lastmod>2026-05-23</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://leantalk.cn/article/20260524-mrp-kanban.html</loc><lastmod>2026-05-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://leantalk.cn/article/20260525-mfmea.html</loc><lastmod>2026-05-25</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://leantalk.cn/article/kb-20260502-bcg-talent-advantage-2026.html</loc><lastmod>2026-05-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://leantalk.cn/article/kb-20260516-leader-diagnosis.html</loc><lastmod>2026-05-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://leantalk.cn/article/kb-20260516-flow-ownership.html</loc><lastmod>2026-05-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://leantalk.cn/article/kb-20260518-mes.html</loc><lastmod>2026-05-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://leantalk.cn/article/kb-20260523-ai-qc.html</loc><lastmod>2026-05-23</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://leantalk.cn/article/skill-guyan.html</loc><lastmod>2026-05-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://leantalk.cn/article/skill-self-improving.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://leantalk.cn/article/skill-workspace.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
