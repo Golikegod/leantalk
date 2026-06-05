@@ -1,17 +1,17 @@
-# Dependencies
+# ─── 构建/部署缓存 ───
+.wrangler/
 node_modules/
 
-# Build output
-dist/
-build/
+# ─── 历史备份（保留工作区，不入版本） ───
+src/qrcode1.jpg.broken_*
+src/*.broken_*
 
-# OS
-.DS_Store
-Thumbs.db
+# ─── 调试/实验产物（不入版本） ───
+scripts/wechat-test*.html
+scripts/analyze*.js
+scripts/test-wechat.js
+scripts/wechat_to_leantalk.js
 
-# Logs
-*.log
-
-# Environment
-.env
-.env.local
+# ─── 临时拉取（不入版本） ───
+__fetched*.html
+__diff*.html

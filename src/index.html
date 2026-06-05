@@ -371,7 +371,7 @@ async function loadData() {
       <div class="news-item">
         <span class="news-rank">${item.rank}</span>
         <div class="news-body">
-          <h3><a href="${item.url}" target="_blank" rel="noopener">${item.title}</a></h3>
+          <h3>${item.url ? `<a href="${item.url}" target="_blank" rel="noopener">${item.title}</a>` : item.title}</h3>
           <div class="news-meta">
             <span class="hot-tag hot-${item.hotLevel}">${item.hotLevel === 'high' ? '热门' : item.hotLevel === 'medium' ? '中等' : '普通'}</span>
             <span>${item.source}</span>
