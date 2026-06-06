@@ -172,6 +172,8 @@ img { max-width: 100%; display: block; }
 .news-item:last-child { border-bottom: none; }
 .news-rank { font-size: 13px; font-weight: 800; color: var(--border); min-width: 24px; line-height: 1.7; }
 .news-body { flex: 1; }
+.news-thumb { width: 88px; height: 88px; object-fit: cover; border-radius: 8px; flex-shrink: 0; background: var(--bg-secondary); }
+@media (max-width: 640px) { .news-thumb { width: 64px; height: 64px; } }
 .news-body h3 { font-size: 15px; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; line-height: 1.4; }
 .news-body h3 a:hover { color: var(--accent); }
 .news-meta { font-size: 12px; color: var(--text-muted); display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
@@ -370,6 +372,7 @@ async function loadData() {
     newsList.innerHTML = news.slice(0, 6).map(item => `
       <div class="news-item">
         <span class="news-rank">${item.rank}</span>
+        ${item.thumb ? `<img class="news-thumb" src="${item.thumb}" alt="" loading="lazy" decoding="async" />` : ''}
         <div class="news-body">
           <h3>${item.url ? `<a href="${item.url}" target="_blank" rel="noopener">${item.title}</a>` : item.title}</h3>
           <div class="news-meta">

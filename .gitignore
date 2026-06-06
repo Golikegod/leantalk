@@ -2,16 +2,27 @@
 .wrangler/
 node_modules/
 
-# ─── 历史备份（保留工作区，不入版本） ───
+# ─── 历史备份（保留工作区，不入版本）───
 src/qrcode1.jpg.broken_*
 src/*.broken_*
 
-# ─── 调试/实验产物（不入版本） ───
+# ─── 临时备份（数据/JSON 修复时的自动备份）───
+*.bak_thumbs
+*.bak
+*.broken_*
+
+# ─── 调试/实验产物（不入版本）───
 scripts/wechat-test*.html
 scripts/analyze*.js
 scripts/test-wechat.js
 scripts/wechat_to_leantalk.js
 
-# ─── 临时拉取（不入版本） ───
+# ─── 临时抓取（不入版本）───
 __fetched*.html
 __diff*.html
+
+# ─── 部署调试产物（不入版本）───
+__pages_cache.json
+__wrangler*.log
+__*.log
+__*.json

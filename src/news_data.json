@@ -5,7 +5,8 @@
     "time": "30分钟前",
     "hotLevel": "high",
     "url": "",
-    "rank": 1
+    "rank": 1,
+    "thumb": "assets/news/news-thumb-01.jpg"
   },
   {
     "title": "工信部：2026年新培育300家智能制造示范工厂，覆盖500个重点行业",
@@ -13,7 +14,8 @@
     "time": "2小时前",
     "hotLevel": "high",
     "url": "",
-    "rank": 2
+    "rank": 2,
+    "thumb": "assets/news/news-thumb-02.jpg"
   },
   {
     "title": "东杰智能：公司专注于提供全流程“物流+信息流”的智能制造综合方案",
@@ -21,7 +23,8 @@
     "time": "1天前",
     "hotLevel": "medium",
     "url": "",
-    "rank": 3
+    "rank": 3,
+    "thumb": "assets/news/news-thumb-03.jpg"
   },
   {
     "title": "东方通信：公司在智能制造领域拥有30余年的产业化和电子制造经验",
@@ -29,7 +32,8 @@
     "time": "1天前",
     "hotLevel": "medium",
     "url": "",
-    "rank": 4
+    "rank": 4,
+    "thumb": "assets/news/news-thumb-04.jpg"
   },
   {
     "title": "菲利华：公司石英电子纱智能制造（一期）建设项目正按计划有序推进中",
@@ -37,7 +41,8 @@
     "time": "1天前",
     "hotLevel": "medium",
     "url": "",
-    "rank": 5
+    "rank": 5,
+    "thumb": "assets/news/news-thumb-05.jpg"
   },
   {
     "title": "上海沪工：2026年公司主要增长驱动力来自智能制造板块的持续升级与转型",
@@ -45,6 +50,7 @@
     "time": "2天前",
     "hotLevel": "medium",
     "url": "",
-    "rank": 6
+    "rank": 6,
+    "thumb": "assets/news/news-thumb-06.jpg"
   }
 ]
