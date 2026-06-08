@@ -87,14 +87,14 @@ img { max-width: 100%; display: block; }
   display: inline-flex; align-items: center; gap: 8px;
   padding: 14px 32px; background: var(--text-primary); color: #fff;
   border-radius: 10px; font-weight: 600; font-size: 15px;
-  transition: all 0.2s; letter-spacing: -0.2px;
+  transition: transform 0.2s, opacity 0.2s, background-color 0.2s, border-color 0.2s, box-shadow 0.2s; letter-spacing: -0.2px;
 }
 .btn-primary:hover { background: #333; transform: translateY(-1px); box-shadow: var(--shadow-hover); }
 .btn-ghost {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 14px 32px; background: transparent;
   color: var(--text-secondary); border: 1.5px solid var(--border);
-  border-radius: 10px; font-weight: 600; font-size: 15px; transition: all 0.2s;
+  border-radius: 10px; font-weight: 600; font-size: 15px; transition: transform 0.2s, opacity 0.2s, background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
 .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
 
@@ -113,7 +113,7 @@ img { max-width: 100%; display: block; }
 .article-card {
   background: var(--bg); border: 1px solid var(--border);
   border-radius: var(--radius); overflow: hidden;
-  transition: all 0.2s; display: flex; flex-direction: column;
+  transition: transform 0.2s, opacity 0.2s, background-color 0.2s, border-color 0.2s, box-shadow 0.2s; display: flex; flex-direction: column;
 }
 .article-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-3px); border-color: rgba(0,201,167,0.25); }
 .article-card-body { padding: 28px 28px 24px; flex: 1; display: flex; flex-direction: column; }
@@ -132,7 +132,7 @@ img { max-width: 100%; display: block; }
 .kb-card {
   background: var(--bg); border: 1px solid var(--border);
   border-radius: var(--radius); overflow: hidden;
-  transition: all 0.2s; display: flex; flex-direction: column;
+  transition: transform 0.2s, opacity 0.2s, background-color 0.2s, border-color 0.2s, box-shadow 0.2s; display: flex; flex-direction: column;
 }
 .kb-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-3px); border-color: rgba(0,201,167,0.25); }
 .kb-card-body { padding: 28px 28px 24px; flex: 1; display: flex; flex-direction: column; }
@@ -148,7 +148,7 @@ img { max-width: 100%; display: block; }
 .skill-card {
   background: var(--bg); border: 1px solid var(--border);
   border-radius: var(--radius); overflow: hidden;
-  transition: all 0.2s; display: flex; flex-direction: column;
+  transition: transform 0.2s, opacity 0.2s, background-color 0.2s, border-color 0.2s, box-shadow 0.2s; display: flex; flex-direction: column;
 }
 .skill-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-3px); border-color: rgba(0,201,167,0.25); }
 .skill-card-body { padding: 28px 28px 24px; flex: 1; display: flex; flex-direction: column; }
